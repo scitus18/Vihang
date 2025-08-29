@@ -1,0 +1,1 @@
+/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description/ament_cmake_environment_hooks/local_setup.bash

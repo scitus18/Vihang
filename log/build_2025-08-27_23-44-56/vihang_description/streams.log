@@ -1,0 +1,27 @@
+[0.173s] Invoking command in '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description -- -j8 -l8
+[0.418s] Invoked command in '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description -- -j8 -l8
+[0.486s] Invoking command in '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description
+[0.512s] -- Install configuration: ""
+[0.543s] -- Execute custom install script
+[0.656s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/launch/display.launch.py
+[0.724s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/launch/gazebo.launch.py
+[0.830s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/meshes/body.stl
+[0.895s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/meshes/rotor.stl
+[0.960s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/meshes/wing.stl
+[1.045s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/urdf/vihang.urdf.xacro
+[1.187s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/ament_index/resource_index/package_run_dependencies/vihang_description
+[1.328s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/ament_index/resource_index/parent_prefix_path/vihang_description
+[1.386s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/environment/ament_prefix_path.sh
+[1.457s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/environment/ament_prefix_path.dsv
+[1.515s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/environment/path.sh
+[1.589s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/environment/path.dsv
+[1.659s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/local_setup.bash
+[1.720s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/local_setup.sh
+[1.796s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/local_setup.zsh
+[1.869s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/local_setup.dsv
+[1.904s] -- Symlinking: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/package.dsv
+[2.128s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/ament_index/resource_index/packages/vihang_description
+[2.219s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/cmake/vihang_descriptionConfig.cmake
+[2.296s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/cmake/vihang_descriptionConfig-version.cmake
+[2.373s] -- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/package.xml
+[2.404s] Invoked command in '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description

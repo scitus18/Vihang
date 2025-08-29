@@ -1,0 +1,146 @@
+[0.000000] (-) TimerEvent: {}
+[0.000945] (vihang_description) JobQueued: {'identifier': 'vihang_description', 'dependencies': OrderedDict()}
+[0.001593] (vihang_description) JobStarted: {'identifier': 'vihang_description'}
+[0.097109] (-) TimerEvent: {}
+[0.131113] (vihang_description) JobProgress: {'identifier': 'vihang_description', 'progress': 'cmake'}
+[0.198322] (-) TimerEvent: {}
+[0.220050] (vihang_description) Command: {'cmd': ['/usr/bin/cmake', '/mnt/c/Users/lenovo/Desktop/vihang_ws/src/vihang_description', '-DCMAKE_INSTALL_PREFIX=/mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description'], 'cwd': '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'garv'), ('GIT_ASKPASS', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/garv'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bd24e315-7641-43b5-9e8c-74531f691e5b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/garv/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/c/Users/lenovo/Desktop/vihang_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'garv'), ('NAME', 'LAPTOP-SNSARQ54'), ('WSL_INTEROP', '/run/WSL/324_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/remote-cli:/home/garv/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/lenovo/Desktop/Code/C++/tools/mingw64/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/FLUTTER SRC/flutter_windows_3.10.0-stable/flutter/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Users/lenovo/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/lenovo/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/lenovo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lenovo/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/FLUTTER SRC/bin:/mnt/c/Users/lenovo/.dotnet/tools:/snap/bin:/home/garv/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/garv/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-ec193624814f7369.txt'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b6e4da7db.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.299365] (-) TimerEvent: {}
+[0.404526] (-) TimerEvent: {}
+[0.509756] (-) TimerEvent: {}
+[0.566091] (vihang_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.610960] (-) TimerEvent: {}
+[0.712871] (-) TimerEvent: {}
+[0.814148] (-) TimerEvent: {}
+[0.919172] (-) TimerEvent: {}
+[0.922081] (vihang_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.021810] (-) TimerEvent: {}
+[1.125726] (-) TimerEvent: {}
+[1.229848] (-) TimerEvent: {}
+[1.238645] (vihang_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.331043] (-) TimerEvent: {}
+[1.434902] (-) TimerEvent: {}
+[1.539467] (-) TimerEvent: {}
+[1.642635] (-) TimerEvent: {}
+[1.745915] (-) TimerEvent: {}
+[1.849142] (-) TimerEvent: {}
+[1.950173] (-) TimerEvent: {}
+[2.051268] (-) TimerEvent: {}
+[2.154883] (-) TimerEvent: {}
+[2.257989] (-) TimerEvent: {}
+[2.360809] (-) TimerEvent: {}
+[2.464201] (-) TimerEvent: {}
+[2.567301] (-) TimerEvent: {}
+[2.669323] (-) TimerEvent: {}
+[2.770215] (-) TimerEvent: {}
+[2.873090] (-) TimerEvent: {}
+[2.975999] (-) TimerEvent: {}
+[3.076850] (-) TimerEvent: {}
+[3.177929] (-) TimerEvent: {}
+[3.281346] (-) TimerEvent: {}
+[3.384283] (-) TimerEvent: {}
+[3.487063] (-) TimerEvent: {}
+[3.559285] (vihang_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.587439] (-) TimerEvent: {}
+[3.689131] (-) TimerEvent: {}
+[3.793686] (-) TimerEvent: {}
+[3.897082] (-) TimerEvent: {}
+[4.002370] (-) TimerEvent: {}
+[4.024768] (vihang_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.103256] (-) TimerEvent: {}
+[4.206100] (-) TimerEvent: {}
+[4.251163] (vihang_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.308467] (-) TimerEvent: {}
+[4.411658] (-) TimerEvent: {}
+[4.514992] (-) TimerEvent: {}
+[4.617219] (-) TimerEvent: {}
+[4.721492] (-) TimerEvent: {}
+[4.831772] (-) TimerEvent: {}
+[4.934934] (-) TimerEvent: {}
+[5.036773] (-) TimerEvent: {}
+[5.139928] (-) TimerEvent: {}
+[5.243039] (-) TimerEvent: {}
+[5.346254] (-) TimerEvent: {}
+[5.449279] (-) TimerEvent: {}
+[5.552312] (-) TimerEvent: {}
+[5.655106] (-) TimerEvent: {}
+[5.758153] (-) TimerEvent: {}
+[5.860994] (-) TimerEvent: {}
+[5.926501] (vihang_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.961701] (-) TimerEvent: {}
+[6.063852] (-) TimerEvent: {}
+[6.166715] (-) TimerEvent: {}
+[6.270258] (-) TimerEvent: {}
+[6.275109] (vihang_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.374470] (-) TimerEvent: {}
+[6.479597] (-) TimerEvent: {}
+[6.580822] (-) TimerEvent: {}
+[6.683774] (-) TimerEvent: {}
+[6.788987] (-) TimerEvent: {}
+[6.891250] (-) TimerEvent: {}
+[6.994569] (-) TimerEvent: {}
+[7.095618] (-) TimerEvent: {}
+[7.196624] (-) TimerEvent: {}
+[7.204533] (vihang_description) StdoutLine: {'line': b'-- Generating done\n'}
+[7.299873] (-) TimerEvent: {}
+[7.404987] (-) TimerEvent: {}
+[7.510276] (-) TimerEvent: {}
+[7.573417] (vihang_description) StdoutLine: {'line': b'-- Build files have been written to: /mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description\n'}
+[7.577215] (vihang_description) CommandEnded: {'returncode': 0}
+[7.583541] (vihang_description) JobProgress: {'identifier': 'vihang_description', 'progress': 'build'}
+[7.590199] (vihang_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description', '--', '-j8', '-l8'], 'cwd': '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'garv'), ('GIT_ASKPASS', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/garv'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bd24e315-7641-43b5-9e8c-74531f691e5b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/garv/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/c/Users/lenovo/Desktop/vihang_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'garv'), ('NAME', 'LAPTOP-SNSARQ54'), ('WSL_INTEROP', '/run/WSL/324_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/remote-cli:/home/garv/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/lenovo/Desktop/Code/C++/tools/mingw64/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/FLUTTER SRC/flutter_windows_3.10.0-stable/flutter/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Users/lenovo/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/lenovo/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/lenovo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lenovo/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/FLUTTER SRC/bin:/mnt/c/Users/lenovo/.dotnet/tools:/snap/bin:/home/garv/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/garv/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-ec193624814f7369.txt'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b6e4da7db.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[7.610575] (-) TimerEvent: {}
+[7.711322] (-) TimerEvent: {}
+[7.727151] (vihang_description) CommandEnded: {'returncode': 0}
+[7.755500] (vihang_description) JobProgress: {'identifier': 'vihang_description', 'progress': 'install'}
+[7.772762] (vihang_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description'], 'cwd': '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'garv'), ('GIT_ASKPASS', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/garv'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bd24e315-7641-43b5-9e8c-74531f691e5b.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/garv/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/mnt/c/Users/lenovo/Desktop/vihang_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'garv'), ('NAME', 'LAPTOP-SNSARQ54'), ('WSL_INTEROP', '/run/WSL/324_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/garv/.vscode-server/bin/6f17636121051a53c88d3e605c491d22af2ba755/bin/remote-cli:/home/garv/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/lenovo/Desktop/Code/C++/tools/mingw64/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Git/mingw64/bin:/mnt/c/Program Files/Git/usr/bin:/mnt/c/FLUTTER SRC/flutter_windows_3.10.0-stable/flutter/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/MATLAB/R2024b/runtime/win64:/mnt/c/Program Files/MATLAB/R2024b/bin:/mnt/c/Program Files/MATLAB/R2023b/runtime/win64:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/Users/lenovo/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/lenovo/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/lenovo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/lenovo/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/FLUTTER SRC/bin:/mnt/c/Users/lenovo/.dotnet/tools:/snap/bin:/home/garv/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/garv/.vscode-server/extensions/ms-python.debugpy-2025.10.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-ec193624814f7369.txt'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-9b6e4da7db.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[7.786638] (vihang_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.804917] (vihang_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[7.813535] (-) TimerEvent: {}
+[7.880037] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/launch/display.launch.py\n'}
+[7.914022] (-) TimerEvent: {}
+[7.927316] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/launch/gazebo.launch.py\n'}
+[7.998271] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/meshes/body.stl\n'}
+[8.014796] (-) TimerEvent: {}
+[8.057036] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/meshes/rotor.stl\n'}
+[8.108484] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/meshes/wing.stl\n'}
+[8.115080] (-) TimerEvent: {}
+[8.183180] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/urdf/vihang.urdf.xacro\n'}
+[8.215821] (-) TimerEvent: {}
+[8.273296] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/ament_index/resource_index/package_run_dependencies/vihang_description\n'}
+[8.317693] (-) TimerEvent: {}
+[8.356893] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/ament_index/resource_index/parent_prefix_path/vihang_description\n'}
+[8.398641] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/environment/ament_prefix_path.sh\n'}
+[8.418318] (-) TimerEvent: {}
+[8.451652] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/environment/ament_prefix_path.dsv\n'}
+[8.499634] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/environment/path.sh\n'}
+[8.519194] (-) TimerEvent: {}
+[8.554577] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/environment/path.dsv\n'}
+[8.598091] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/local_setup.bash\n'}
+[8.620237] (-) TimerEvent: {}
+[8.660622] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/local_setup.sh\n'}
+[8.721665] (-) TimerEvent: {}
+[8.725073] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/local_setup.zsh\n'}
+[8.785789] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/local_setup.dsv\n'}
+[8.816474] (vihang_description) StdoutLine: {'line': b'-- Symlinking: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/package.dsv\n'}
+[8.821886] (-) TimerEvent: {}
+[8.923203] (-) TimerEvent: {}
+[9.003389] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/ament_index/resource_index/packages/vihang_description\n'}
+[9.023397] (-) TimerEvent: {}
+[9.050841] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/cmake/vihang_descriptionConfig.cmake\n'}
+[9.082068] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/cmake/vihang_descriptionConfig-version.cmake\n'}
+[9.116553] (vihang_description) StdoutLine: {'line': b'-- Up-to-date symlink: /mnt/c/Users/lenovo/Desktop/vihang_ws/install/vihang_description/share/vihang_description/package.xml\n'}
+[9.123745] (-) TimerEvent: {}
+[9.124331] (vihang_description) CommandEnded: {'returncode': 0}
+[9.223949] (-) TimerEvent: {}
+[9.327833] (-) TimerEvent: {}
+[9.435784] (-) TimerEvent: {}
+[9.540556] (-) TimerEvent: {}
+[9.643746] (-) TimerEvent: {}
+[9.747697] (-) TimerEvent: {}
+[9.854832] (-) TimerEvent: {}
+[9.957277] (-) TimerEvent: {}
+[10.061885] (-) TimerEvent: {}
+[10.166724] (-) TimerEvent: {}
+[10.241119] (vihang_description) JobEnded: {'identifier': 'vihang_description', 'rc': 0}
+[10.261774] (-) EventReactorShutdown: {}

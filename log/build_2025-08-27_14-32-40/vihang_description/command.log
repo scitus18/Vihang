@@ -1,0 +1,4 @@
+Invoking command in '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description -- -j8 -l8
+Invoked command in '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description -- -j8 -l8
+Invoking command in '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description
+Invoked command in '/mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /mnt/c/Users/lenovo/Desktop/vihang_ws/build/vihang_description
