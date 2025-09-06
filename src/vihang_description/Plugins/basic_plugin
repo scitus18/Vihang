@@ -1,0 +1,96 @@
+#include <gz/sim/System.hh>
+#include <gz/sim/components/Link.hh>
+#include <gz/sim/components/World.hh>
+#include <gz/math/Vector3.hh>
+
+#include <gz/plugin/Register.hh>
+
+namespace gazebo
+{
+  class AdvancedLiftDrag : public gz::sim::System,
+                           public gz::sim::ISystemConfigure,
+                           public gz::sim::ISystemUpdate
+  {
+  public:
+    AdvancedLiftDrag()
+      : cla(1.0), cda(0.01), cma(0.01), rho(1.2041), alpha0(0.0),
+
+        alphaStall(0.5 * M_PI), claStall(0.0), cdaStall(1.0), cmaStall(0.0),
+        area(1.0), cp(gz::math::Vector3d::Zero),
+    
+        forward(gz::math::Vector3d(1, 0, 0)),
+
+        upward(gz::math::Vector3d(0, 0, 1))
+    {
+    }
+
+    void Configure(const gz::sim::Entity &_entity,
+                   const std::shared_ptr<const sdf::Element> &_sdf,
+                   gz::sim::EntityComponentManager &_ecm,
+                   gz::sim::EventManager &_eventMgr) override
+    {
+      if (_sdf->HasElement("link_name"))
+      {
+        linkName = _sdf->Get<std::string>("link_name");
+        linkEntity = _ecm.EntityByComponents(gz::sim::components::Link(),
+                                            gz::sim::components::Name(linkName));
+      }
+
+      if (_sdf->HasElement("a0"))
+        alpha0 = _sdf->Get<double>("a0");
+      if (_sdf->HasElement("cla"))
+        cla = _sdf->Get<double>("cla");
+      if (_sdf->HasElement("cda"))
+        cda = _sdf->Get<double>("cda");
+      if (_sdf->HasElement("cma"))
+        cma = _sdf->Get<double>("cma");
+      if (_sdf->HasElement("alpha_stall"))
+        alphaStall = _sdf->Get<double>("alpha_stall");
+      if (_sdf->HasElement("cla_stall"))
+        claStall = _sdf->Get<double>("cla_stall");
+      if (_sdf->HasElement("cda_stall"))
+        cdaStall = _sdf->Get<double>("cda_stall");
+      if (_sdf->HasElement("cma_stall"))
+        cmaStall = _sdf->Get<double>("cma_stall");
+      if (_sdf->HasElement("cp"))
+        cp = _sdf->Get<gz::math::Vector3d>("cp");
+      if (_sdf->HasElement("forward"))
+        forward = _sdf->Get<gz::math::Vector3d>("forward");
+      if (_sdf->HasElement("upward"))
+        upward = _sdf->Get<gz::math::Vector3d>("upward");
+      if (_sdf->HasElement("area"))
+        area = _sdf->Get<double>("area");
+      if (_sdf->HasElement("air_density"))
+        rho = _sdf->Get<double>("air_density");
+    }
+
+    void Update(const gz::sim::UpdateInfo &_info,
+                gz::sim::EntityComponentManager &_ecm) override
+    {
+      if (!linkEntity)
+        return;
+
+      auto link = gz::sim::Link(linkEntity);
+      auto vel = link.WorldLinearVelocity(_ecm, cp);
+      if (!vel)
+        return;
+    }
+
+  private:
+    gz::sim::Entity linkEntity;
+    std::string linkName;
+    double cla, cda, cma, rho, alpha0, alphaStall, claStall, cdaStall, cmaStall, area;
+
+    gz::math::Vector3d cp, forward, upward;
+  };
+}
+
+GZ_ADD_PLUGIN(
+  gazebo::AdvancedLiftDrag,
+  gz::sim::System,
+  
+  gazebo::AdvancedLiftDrag::ISystemConfigure,
+  gazebo::AdvancedLiftDrag::ISystemUpdate
+)
+
+GZ_ADD_PLUGIN_ALIAS(gazebo::AdvancedLiftDrag, "gazebo::AdvancedLiftDrag")
