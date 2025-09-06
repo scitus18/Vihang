@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Wing Macro -->
+  <xacro:macro name="wing" params="prefix reflect">
+    <link name="${prefix}_wing">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${wing_length} ${wing_width} ${wing_height}"/>
+        </geometry>
+        <material name="green">
+          <color rgba="0 1 0 1"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${wing_length} ${wing_width} ${wing_height}"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="${wing_mass}"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="${wing_ixx}" ixy="0" ixz="0" iyy="${wing_iyy}" iyz="0" izz="${wing_izz}"/>
+      </inertial>
+    </link>
+
+    <joint name="${prefix}_wing_joint" type="fixed">
+      <parent link="base_link"/>
+      <child link="${prefix}_wing"/>
+      <origin xyz="0 ${reflect * wing_offset_y} 0" rpy="0 0 0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- Tilt Motor Macro -->
+  <xacro:macro name="tilt_motor" params="prefix wing_prefix x_pos">
+    <link name="${prefix}_motor">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${motor_width} ${motor_depth} ${motor_height}"/>
+        </geometry>
+        <material name="yellow">
+          <color rgba="1 1 0 1"/>
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${motor_width} ${motor_depth} ${motor_height}"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="${motor_mass}"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="${motor_ixx}" ixy="0" ixz="0" iyy="${motor_iyy}" iyz="0" izz="${motor_izz}"/>
+      </inertial>
+    </link>
+
+    <joint name="${prefix}_tilt_joint" type="revolute">
+      <parent link="${wing_prefix}_wing"/>
+      <child link="${prefix}_motor"/>
+      <origin xyz="${x_pos} 0 ${motor_z_offset}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="${tilt_limit_lower}" upper="${tilt_limit_upper}" effort="${tilt_effort}" velocity="${tilt_velocity}"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- Propeller Macro -->
+  <xacro:macro name="propeller" params="prefix motor_prefix">
+    <link name="${prefix}_prop">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="${prop_radius}" length="${prop_thickness}"/>
+        </geometry>
+        <material name="gray">
+          <color rgba="0.5 0.5 0.5 1"/>
+        </material>
+      </visual>
+      <inertial>
+        <mass value="${prop_mass}"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <inertia ixx="${prop_ixx}" ixy="0" ixz="0" iyy="${prop_iyy}" iyz="0" izz="${prop_izz}"/>
+      </inertial>
+    </link>
+
+    <joint name="${prefix}_prop_joint" type="continuous">
+      <parent link="${motor_prefix}_motor"/>
+      <child link="${prefix}_prop"/>
+      <origin xyz="0 0 ${prop_z_offset}" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- Complete Motor Assembly Macro -->
+  <xacro:macro name="motor_assembly" params="prefix wing_prefix x_pos">
+    <xacro:tilt_motor prefix="${prefix}" wing_prefix="${wing_prefix}" x_pos="${x_pos}"/>
+    <xacro:propeller prefix="${prefix}" motor_prefix="${prefix}"/>
+  </xacro:macro>
+
+</robot>
